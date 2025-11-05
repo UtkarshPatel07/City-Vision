@@ -38,14 +38,13 @@ export function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center lg:text-left">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="space-y-8"
-          >
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="space-y-8 max-w-4xl mx-auto"
+        >
             {/* Trust Badge */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -88,9 +87,9 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1 }}
-              className="grid grid-cols-3 gap-6 lg:gap-8"
+              className="grid grid-cols-3 gap-6 lg:gap-8 max-w-2xl mx-auto"
             >
-              <div className="text-center lg:text-left">
+              <div className="text-center">
                 <div className="text-2xl lg:text-3xl text-[var(--warm-gold)]">
                   15+
                 </div>
@@ -98,7 +97,7 @@ export function Hero() {
                   Years Experience
                 </div>
               </div>
-              <div className="text-center lg:text-left">
+              <div className="text-center">
                 <div className="text-2xl lg:text-3xl text-[var(--warm-gold)]">
                   1000+
                 </div>
@@ -106,7 +105,7 @@ export function Hero() {
                   Happy Investors
                 </div>
               </div>
-              <div className="text-center lg:text-left">
+              <div className="text-center">
                 <div className="text-2xl lg:text-3xl text-[var(--warm-gold)]">
                   5
                 </div>
@@ -121,7 +120,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.2 }}
-              className="flex flex-col sm:flex-row gap-4"
+              className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               <Button
                 size="lg"
@@ -141,58 +140,7 @@ export function Hero() {
                 Schedule Site Visit
               </Button>
             </motion.div>
-          </motion.div>
-
-          {/* Video Preview Card */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="hidden lg:block"
-          >
-            <div className="relative bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
-              <div className="space-y-6">
-                <div className="text-center">
-                  <h3 className="text-white text-xl mb-2">
-                    Experience Nashik
-                  </h3>
-                  <p className="text-white/70">
-                    Watch our virtual tour
-                  </p>
-                </div>
-
-                <div className="relative aspect-video bg-gradient-to-br from-[var(--navy)] to-[var(--vine-green)] rounded-xl flex items-center justify-center group cursor-pointer">
-                  <motion.div
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                    className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:bg-white/30 transition-colors"
-                  >
-                    <Play className="w-8 h-8 text-white ml-1" />
-                  </motion.div>
-                </div>
-
-                <div className="grid grid-cols-2 gap-4 text-center">
-                  <div>
-                    <div className="text-lg text-[var(--warm-gold)]">
-                      2.5x
-                    </div>
-                    <div className="text-white/70 text-sm">
-                      Avg. ROI
-                    </div>
-                  </div>
-                  <div>
-                    <div className="text-lg text-[var(--warm-gold)]">
-                      6 hrs
-                    </div>
-                    <div className="text-white/70 text-sm">
-                      Mumbai Distance
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-        </div>
+        </motion.div>
       </div>
 
       {/* Scroll Indicator */}

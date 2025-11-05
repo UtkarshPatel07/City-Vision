@@ -6,7 +6,7 @@ import { AboutPage } from './pages/AboutPage';
 export default function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-[#2c3e50]">
         <Navigation />
         <Routes>
           <Route path="/" element={<HomePage />} />

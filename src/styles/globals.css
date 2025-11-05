@@ -2,8 +2,8 @@
 
 :root {
   --font-size: 16px;
-  --background: #ffffff;
-  --foreground: #0B2447;
+  --background: #2c3e50;
+  --foreground: #ffffff;
   --card: #ffffff;
   --card-foreground: #0B2447;
   --popover: #ffffff;
@@ -40,12 +40,14 @@
   --sidebar-border: rgba(11, 36, 71, 0.1);
   --sidebar-ring: #1E7A5F;
   
-  /* City Vision Brand Colors */
-  --navy: #0B2447;
-  --vine-green: #1E7A5F;
+  /* City Vision Brand Colors - Dark Theme */
+  --navy: #2c3e50;
+  --vine-green: #7dd3c0;
   --warm-gold: #D4AF37;
-  --light-gray: #f8f9fa;
-  --medium-gray: #6c757d;
+  --light-gray: #34495e;
+  --medium-gray: #95a5a6;
+  --dark-bg: #2c3e50;
+  --darker-bg: #1a252f;
 }
 
 .dark {
